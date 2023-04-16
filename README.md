@@ -8,7 +8,9 @@ This TypeScript code sample demonstrates how to build a Single-Page Application 
 
 Visit the ["Angular/TypeScript Code Samples: SPA Security in Action"](https://developer.auth0.com/resources/code-samples/spa/angular) section of the ["Auth0 Developer Resources"](https://developer.auth0.com/resources) to explore how you can secure Angular applications written in TypeScript by implementing endpoint protection and authorization with Auth0.
 
-[![Angular/TypeScript Code Samples: SPA Security in Action](https://cdn.auth0.com/blog/hub/code-samples/spa/angular-typescript.png)](https://developer.auth0.com/resources/code-samples/spa/angular)
+["Angular/TypeScript Code Samples: SPA Security in Action"](https://developer.auth0.com/resources/code-samples/spa/angular)
+
+https://developer.auth0.com/resources/guides/spa/angular/basic-authentication
 
 ## Why Use Auth0?
 
