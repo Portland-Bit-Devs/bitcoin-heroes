@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroesComponent } from './heroes.component';
+import { CardComponent } from './card.component';
 
 
 @NgModule({
   declarations: [
-    HeroesComponent
+    HeroesComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule
   ],
   exports: [
-    HeroesComponent
+    HeroesComponent,
+    CardComponent
   ]
 })
 export class HeroesModule { }

@@ -7,18 +7,31 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     loadChildren: () =>
-      import('./features/home/home.module').then((m) => m.HomeModule),
+      import('./features/home/home.module').then(
+        (m) => m.HomeModule
+      ),
   },
   {
     path: 'profile',
     loadChildren: () =>
-      import('./features/profile/profile.module').then((m) => m.ProfileModule),
+      import('./features/profile/profile.module').then(
+        (m) => m.ProfileModule
+    ),
     canActivate: [AuthGuard],
   },
   {
     path: 'public',
     loadChildren: () =>
-      import('./features/public/public.module').then((m) => m.PublicModule),
+      import('./features/public/public.module').then(
+        (m) => m.PublicModule
+      ),
+  },
+  {
+    path: 'heroes',
+    loadChildren: () =>
+      import('./features/heroes/heroes.module').then(
+        (m) => m.HeroesModule
+      ),
   },
   {
     path: 'protected',
@@ -31,7 +44,9 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () =>
-      import('./features/admin/admin.module').then((m) => m.AdminModule),
+      import('./features/admin/admin.module').then(
+        (m) => m.AdminModule
+      ),
     canActivate: [AuthGuard],
   },
   {
