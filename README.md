@@ -1,5 +1,9 @@
 # bitcoin-heroes
 
+This Bitcoin Heroes app displays Heroes (& Villians) in the Bitcoin community.  
+
+## Project Template Source
+
 This TypeScript code sample demonstrates how to build a Single-Page Application (SPA) using Angular. This Angular code sample builds the API server using Angular class components.
 
 Visit the ["Angular/TypeScript Code Samples: SPA Security in Action"](https://developer.auth0.com/resources/code-samples/spa/angular) section of the ["Auth0 Developer Resources"](https://developer.auth0.com/resources) to explore how you can secure Angular applications written in TypeScript by implementing endpoint protection and authorization with Auth0.
