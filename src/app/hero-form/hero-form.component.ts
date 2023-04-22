@@ -13,9 +13,9 @@ export class HeroFormComponent implements OnInit {
     id: 0,
     name: '',
     power: '',
-    alterEgo: '',
+    quote: '',
   };
-  powers = ['Chemistry', 'Super Flexible', 'Super Hot', 'Weather Changer'];
+  powers = ['Truth', 'Fear', 'Logic', 'Clarity', 'Confusion', 'Ponzi Schemes', 'Leverage', 'None'];
 
   constructor(private heroService: HeroService) { }
 
@@ -33,14 +33,14 @@ export class HeroFormComponent implements OnInit {
       id: this.heroes.length + 1,
       name: this.hero.name,
       power: this.hero.power,
-      alterEgo: this.hero.alterEgo
+      quote: this.hero.quote
     })
       .subscribe(hero => this.heroes.push(hero))
     this.hero = {
       id: 0,
       name: '',
       power: '',
-      alterEgo: '',
+      quote: '',
     }
   }
 }

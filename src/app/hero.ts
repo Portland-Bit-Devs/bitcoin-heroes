@@ -2,7 +2,7 @@
 //   id: number;
 //   name: string;
 //   power: string;
-//   alterEgo?: string
+//   quote?: string
 // }
 
 export class Hero {
@@ -10,6 +10,6 @@ export class Hero {
     public id: number,
     public name: string,
     public power: string,
-    public alterEgo?: string
+    public quote?: string
   ) { }
 }
