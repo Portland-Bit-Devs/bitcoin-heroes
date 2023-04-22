@@ -1,4 +1,46 @@
 /* HeroesComponent's private CSS styles */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.padded-cell {
+  padding: 0.5rem;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+/*
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
@@ -14,16 +56,19 @@ input {
   box-sizing: border-box;
 }
 
-.heroes li {
+.padded-cell {
+  padding: 4px;
+}
+
+.heroes tr:hover {
+  left: .1em;
+  color: #143;
+}
+
+.heroes tr {
   position: relative;
   cursor: pointer;
-}
-
-.heroes li:hover {
-  left: .1em;
-}
-
-.heroes a {
+  padding: 1px;
   color: #333;
   text-decoration: none;
   background-color: #EEE;
@@ -63,9 +108,7 @@ input {
 }
 
 .add-button {
-  padding: .5rem 1.5rem;
   font-size: 1rem;
-  margin-bottom: 2rem;
 }
 
 .add-button:hover {
@@ -75,9 +118,7 @@ input {
 
 button.delete {
   position: absolute;
-  left: 210px;
   top: 5px;
-  background-color: white;
   color: #525252;
   font-size: 1.1rem;
   margin: 0;
@@ -88,3 +129,5 @@ button.delete:hover {
   background-color: #525252;
   color: white;
 }
+
+*/

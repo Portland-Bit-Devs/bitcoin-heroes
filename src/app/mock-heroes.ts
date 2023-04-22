@@ -1,13 +1,13 @@
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
-  { id: 1, name: 'Dr. Nice', power: 'Gentleman', quote: '' },
-  { id: 2, name: 'Bombasto', power: 'Explosion', quote: '' },
-  { id: 3, name: 'Celeritas', power: 'Super Speed', quote: '' },
-  { id: 4, name: 'Magneta', power: 'Magnetism', quote: '' },
-  { id: 5, name: 'RubberMan', power: 'Super Flexible', quote: '' },
-  { id: 6, name: 'Dynama', power: 'Electricty', quote: '' },
-  { id: 7, name: 'Dr. IQ', power: 'Really Smart', quote: '' },
-  { id: 8, name: 'Magma', power: 'Super Hot', quote: '' },
-  { id: 9, name: 'Tornado', power: 'Weather Change', quote: '' }
+      { id: 1, name: 'Michael Saylor', power: 'Chairman', quote: 'Bitcoin is a swarm of cyber hornets serving the goddess of wisdom, feeding on the fire of truth, exponentially growing ever smarter, faster, and stronger behind a wall of encrypted energy.' },
+      { id: 2, name: 'Elon Musk', power: 'Rockets', quote: 'Bitcoin is the most accessible form of money ever created.' },
+      { id: 3, name: 'Peter Thiel', power: 'Super Speed', quote: 'Bitcoin is the most disruptive form of money ever created.' },
+      { id: 4, name: 'Cameron Winklevoss', power: 'Venture Capital', quote: 'Bitcoin is the most secure form of money ever created.' },
+      { id: 5, name: 'Peter Schiff', power: 'Gold', quote: 'Bitcoin is a digital gold that is immune to inflation and confiscation.' },
+      { id: 6, name: 'Satoshi Nakamoto', power: 'Creator', quote: 'Bitcoin is a peer-to-peer electronic cash system that is revolutionizing the way we think about money.' },
+      { id: 7, name: 'Andreas Antonopoulos', power: 'Coding', quote: 'Bitcoin is a revolution that is still unfolding, and we are only just beginning to see its potential.' },
+      { id: 8, name: 'Max Keiser', power: 'Prophet', quote: 'Bitcoin is a financial revolution.' },
+      { id: 9, name: 'Gavin Andresen', power: 'Weather Change', quote: 'Bitcoin is a decentralized currency.' }
 ];
