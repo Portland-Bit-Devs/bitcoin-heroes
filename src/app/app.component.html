@@ -1,6 +1,27 @@
-<div class="page-layout" *ngIf="isAuth0Loading$ | async; else auth0Loaded">
-    <app-page-loader></app-page-loader>
-</div>
-<ng-template #auth0Loaded>
-    <router-outlet></router-outlet>
-</ng-template>
+<nav [ngClass]="{'collapsed': navbarCollapse}">
+  <span (click)="toggleNavbar()">
+    <mat-icon aria-hidden="false" aria-label="collpase" *ngIf="navbarCollapse; else collapsed">menu</mat-icon>
+    <ng-template #collapsed>
+      <mat-icon aria-hidden="false" aria-label="collpase">close</mat-icon>
+    </ng-template>
+  </span>
+  <div *ngFor="let data of sidebarData">
+    <a routerLink={{data.path}} *ngIf="navbarCollapse; else elseBlock" mat-raised-button #tooltip="matTooltip"
+      matTooltip={{data.title}} matTooltipPosition="right" matTooltipHideDelay="1"
+      aria-label="Just information of what this icon represents">
+      <mat-icon aria-hidden="false" aria-label="dashboard">{{ data.icon }}</mat-icon>
+    </a>
+    <ng-template #elseBlock>
+      <a routerLink={{data.path}}>
+        <mat-icon aria-hidden="false" aria-label="dashboard">{{ data.icon }}</mat-icon>
+        <span class="show-title">
+          {{data.title}}
+        </span>
+      </a>
+    </ng-template>
+  </div>
+</nav>
+<main>
+  <h1>{{ title }}</h1>
+  <router-outlet></router-outlet>
+</main>

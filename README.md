@@ -1,51 +1,27 @@
-# bitcoin-heroes
+# TourOfHeroesAngular
 
-This Bitcoin Heroes app displays Heroes (& Villians) in the Bitcoin community.  
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
-## Project Template Source
+## Development server
 
-This TypeScript code sample demonstrates how to build a Single-Page Application (SPA) using Angular. This Angular code sample builds the API server using Angular class components.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Visit the ["Angular/TypeScript Code Samples: SPA Security in Action"](https://developer.auth0.com/resources/code-samples/spa/angular) section of the ["Auth0 Developer Resources"](https://developer.auth0.com/resources) to explore how you can secure Angular applications written in TypeScript by implementing endpoint protection and authorization with Auth0.
+## Code scaffolding
 
-["Angular/TypeScript Code Samples: SPA Security in Action"](https://developer.auth0.com/resources/code-samples/spa/angular)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-https://developer.auth0.com/resources/guides/spa/angular/basic-authentication
+## Build
 
-## Why Use Auth0?
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Auth0 is a flexible drop-in solution to add authentication and authorization services to your applications. Your team and organization can avoid the cost, time, and risk that come with building your own solution to authenticate and authorize users. We offer tons of guidance and SDKs for you to get started and [integrate Auth0 into your stack easily](https://developer.auth0.com/resources/code-samples/full-stack).
+## Running unit tests
 
-## Set Up and Run the Angular Project
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Install the project dependencies.   You will also need to create the `.env` file mentioned in instructions.
+## Running end-to-end tests
 
-```bash
-npm install
-```
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-The starter Angular project offers a functional application that consumes data from an external API to hydrate the user interface. For simplicity and convenience, the starter project simulates the external API locally using [`json-server`](https://github.com/typicode/json-server).
+## Further help
 
-However, you can also integrate this starter project with any of the ["Hello World" API code samples, which are available in multiple backend frameworks and programming languages](https://github.com/orgs/auth0-developer-hub/repositories?language=&q=api+hello-world&sort=&type=public).
-
-The compatible API server runs on `http://localhost:6060` by default. As such, to connect your Angular application with that API server, create a `.env` file under the root project directory and populate it with the following environment variables:
-
-```bash
-API_SERVER_URL=http://localhost:6060
-```
-
-Next, execute the following command to run the JSON server API:
-
-```bash
-npm run api
-```
-
-Finally, open another terminal tab and execute this command to run your Angular application:
-
-```bash
-npm start
-```
-
-Visit [`http://localhost:4040/`](http://localhost:4040/) to access the starter application.
-
-In the starter project, all the starter Angular application routes are public. However, you can use Auth0 to get an ID token to hydrate the user profile information present on the `/profile` page with information from a real user. With Auth0, you can also get an access token to make a secure call to an external API to hydrate the messages present in the `/protected` and `/admin` pages.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
