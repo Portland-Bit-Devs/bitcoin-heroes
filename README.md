@@ -2,6 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
+WEBSITE: https://bitcoin-heroes.web.app/dashboard
+
+## Setup
+
+#### Setup Node 
+
+    sudo apt install wget curl
+    wget -q -O – https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add –
+    source ~/.bashrc
+    nvm list
+    nvm install v14.21.3
+    npm install -g @angular/cli
+    npm install -g firebase-tools
+    ng build --configuration production
+    firebase login
+    firebase init
+    firebase deploy
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
