@@ -1,11 +1,11 @@
 
 <app-hero-search></app-hero-search>
 <div class="heroes-menu">
-  <a *ngFor="let hero of heroes | shuffle" routerLink="/detail/{{hero.id}}">
+  <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
     <div>
-      <div>{{ hero.name }}</div><br>
-      <div>{{ hero.quote }}</div>
-
+      <div>{{ hero.name }}</div><br/>
+      <div>{{ hero.quote }}</div><br/>
+      <div>{{ hero.power}}</div><br/>
     </div>
   </a>
 </div>

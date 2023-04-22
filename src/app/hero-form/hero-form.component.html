@@ -1,6 +1,6 @@
 
 <div>
-  <h2>Add A New Hero Or Villain</h2>
+  <h2>Add A New Hero</h2>
 </div>
 <form #heroForm="ngForm" (ngSubmit)="onSubmit()">
   <div>
@@ -12,8 +12,8 @@
     <input type="text" id="quote" required name="quote" [(ngModel)]="hero.quote">
   </div>
   <div>
-    <label for="power">Hero Power</label>
-    <select id="power" required name="power" #power="ngModel" [(ngModel)]="hero.power">
+    <label for="power">Hero Power</label><br/>
+    <select id="power" required name="power" #power="ngModel" [(ngModel)]="hero.power" class="taller-input">
       <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
     </select>
   </div>
