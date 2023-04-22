@@ -16,6 +16,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroFormComponent } from './hero-form/hero-form.component';
+import { ShufflePipe } from './pipes';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    ShufflePipe
   ],
   imports: [
     BrowserModule,
