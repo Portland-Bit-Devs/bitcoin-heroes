@@ -18,7 +18,10 @@ WEBSITE: https://bitcoin-heroes.web.app/dashboard
     ng build --configuration production
     firebase login
     firebase init
-       * during init, use Hosting option, and say NO to index.html overwrites
+       * during init:
+         ** deploy uses 'dist/bitcoin-heroes' folder
+         ** use 'Hosting: Configure files for Firebase Hosting' option
+         ** say NO to index.html overwrites
     firebase deploy OR firebase deploy --only hosting
 
 ## Development server
