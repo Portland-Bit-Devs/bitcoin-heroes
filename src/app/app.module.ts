@@ -18,9 +18,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { ShufflePipe } from './pipes';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { firebaseConfig } from './environments/environment.firebase';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from './environments/environment';
 
 @NgModule({
   declarations: [
@@ -44,8 +43,7 @@ import { firebaseConfig } from './environments/environment.firebase';
     BrowserAnimationsModule,
     MatIconModule,
     MatTooltipModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
