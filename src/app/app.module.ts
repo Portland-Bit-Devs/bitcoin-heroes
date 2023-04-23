@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -17,9 +16,6 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { ShufflePipe } from './pipes';
-
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from './environments/environment';
 
 @NgModule({
   declarations: [
@@ -42,8 +38,7 @@ import { environment } from './environments/environment';
     ),
     BrowserAnimationsModule,
     MatIconModule,
-    MatTooltipModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,14 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-
 import { Hero } from './hero';
 import { MessageService } from './message.service';
+
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeroService {
+
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
@@ -23,7 +25,9 @@ export class HeroService {
   constructor(
     private http: HttpClient,
     private messageService: MessageService
-  ) { }
+  ) {
+     var apiKey = environment.firebase.apiKey
+  }
 
   /**
  * Handle Http operation that failed.
@@ -100,4 +104,5 @@ export class HeroService {
       catchError(this.handleError<Hero[]>('searchHeroes', []))
     );
   }
+
 }

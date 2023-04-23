@@ -22,7 +22,7 @@ WEBSITE: https://bitcoin-heroes.web.app/dashboard
          ** deploy uses 'dist/bitcoin-heroes' folder
          ** use 'Hosting: Configure files for Firebase Hosting' option
          ** say NO to index.html overwrites
-    firebase deploy OR firebase deploy --only hosting
+    firebase deploy OR firebase deploy --only hosting:bitcoin-heroes
 
 ## Development server
 
